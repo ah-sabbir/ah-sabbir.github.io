@@ -97,6 +97,12 @@
     .header{
         left: -230px;
     }
+    .header nav ul li{
+        font-size: 16px;
+    }
+    .header nav ul li a{
+        font-size: 14px;
+    }
 }
 
 
