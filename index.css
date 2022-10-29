@@ -123,22 +123,23 @@
 
 .home-nav .btn{
     background: none;
+    height: 20px;
+    width: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 50px;
-    width: 50px; */
-    padding: 50px;
+    margin-bottom: 5px;
     /* border: none; */
 }
 
 .home-nav .btn div{
-    height: 4px;
-    padding: 2px;
+    /* height: 2px; */
+    padding: 1px;
     border-radius: 5px;
-    width: 50px;
-    margin-top: 9px;
+    width: 25px;
+    margin-top: 5px;
     background: #fff;
 }
 
