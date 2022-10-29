@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <section class="header">
+    <section class="header" id="side-menu">
         <h1>sabbir's home</h1>
         <nav class="nav-menu">
             <ul>
@@ -52,8 +52,8 @@
         </div>
     </section>
     <section class="home-page">
-        <div class="home-nav">
-            <div class="btn">
+        <div class="home-nav" id="home-nav">
+            <div class="btn" onclick="show()">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -62,5 +62,23 @@
         </div>
 
     </section>
+
+<script>
+    var menu = document.getElementById("side-menu");
+    var homeNav = document.getElementById("home-nav");
+    var clicked = 0;
+    function show(){
+        if(!clicked){
+            menu.style.left = "0";
+            homeNav.style.left = "230px";
+            clicked = 1;
+        }else{
+            menu.style.left ="-230px";
+            homeNav.style.left = "0";
+            clicked = 0;
+        }
+    }
+</script>
+
 </body>
 </html>
