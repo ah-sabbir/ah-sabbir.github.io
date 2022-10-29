@@ -187,6 +187,8 @@
 
 .container span{
     font-size: 14px;
+    font-family: "josefin sans",Sans-serif;
+    color: #f81d58;
 }
 
 .socials{
@@ -244,5 +246,6 @@
     .container span{
         padding: 0px;
         font-size: 18px;
+        font-family: "josefin sans",Sans-serif;
     }
 }
