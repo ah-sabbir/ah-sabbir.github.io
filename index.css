@@ -142,11 +142,64 @@
     background: #fff;
 }
 
+.home-page{
+    height: 100vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .profile{
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50%;
+}
+
+.container .profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 50%;
+}
+
+.container h1{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container span{
+    font-size: 14px;
+}
+
 
 
 @media(min-width: 700px){
 
     .home-nav{
         display: none;
+    }
+    .container h1{
+        font-size: 48px;
+    }
+    .container .profile{
+        height: 300px;
+        width: 300px;
+    
+        border-radius: 50%;
+    }
+    .container span{
+        padding: 0px;
+        font-size: 18px;
     }
 }
