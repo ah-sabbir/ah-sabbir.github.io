@@ -168,8 +168,8 @@ section {
 }
 
 .container .profile{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -253,7 +253,7 @@ section {
 .scroll-indicator{
     position: absolute;
     text-align: center;
-    bottom: 20px;
+    bottom: 40px;
     left: 0;
     width: 100%;
 }
@@ -322,8 +322,8 @@ section {
         -webkit-text-fill-color: transparent;
     }
     .container .profile{
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
         border-radius: 50%;
         z-index: 1;
     }
