@@ -76,9 +76,9 @@
                 <img src="./asset/Profile_Image.jpeg" alt="" srcset="">
             </div>
             <h1>Sabbir Ahmmed</h1>
-            <span class="anim-txt">Front-end Developer & Digital Marketer</span>
+            <span class="anim-txt" id="type-writer"></span>
             <div class="socials">
-                <a href="">
+                <a href="https://fb.me/ah.sabbir.me">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
                 <a href="">
@@ -87,7 +87,7 @@
                 <a href="">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="">
+                <a href="https://github.com/ah-sabbir">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="">
@@ -111,7 +111,18 @@
     </section>
     <section class="about-me" id="#about">
         <div class="section-container">
-            <h1>About Me</h1>
+            <div class="about-me-img"><img src="./asset/about_me_image.png" alt="About Sabbir Ahmmed"></div>
+            <div class="about-me-right">
+                <h1></h1>
+                <p>I am Sabbir Ahmmed, a Full-Stack Web Developer from Dhaka, Bangladesh. 
+                    I have rich experience in website design and building and customization, 
+                    also I am an expert at Digital Marketing. I also convert html templates to React. 
+                    Besides these, I also have knowledge of Canva Design, basically, 
+                    I like designing Banners & Thumbnails. I also do Digital Marketing like Facebook Ad Management, 
+                    Campaign Run, Keyword Research, and SEO.
+                
+                </p>
+            </div>
         </div>
     </section>
     <section class="service" id="#service">
@@ -132,6 +143,18 @@
             clicked = 0;
         }
     }
+
+    var txt = "&lt;h1&gt; Front-end Developer & Digital Marketer. &lt;/h1&gt;";
+    var position = 0;
+    var speed = 100;
+    function typeWriter(){
+        document.getElementById("type-writer").innerHTML = txt.substring(0,position) + "<span class='blinker'>|</span>";
+        if(position++ != txt.length){
+            setTimeout(typeWriter,speed);
+        }
+    }
+
+    window.addEventListener("load",typeWriter);
 </script>
 
 </body>

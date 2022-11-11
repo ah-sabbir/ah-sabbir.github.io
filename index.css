@@ -193,6 +193,16 @@ section {
     color: #f81d58;
 }
 
+.blinker{
+    animation: Blinker 1s linear infinite;
+}
+
+@keyframes Blinker {
+    50%{
+        opacity: 0;
+    }
+}
+
 .socials{
     width: 500px;
     margin-top: 20px;
@@ -348,12 +358,88 @@ section {
     margin-left: auto;
     margin-right: auto;
     border-top: 4px solid #fff;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-me-img{
+    height: 450px;
+    width: 450px;
+    z-index: 1;
+}
+
+.about-me-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 50%;
+    background: #302F4E;
+}
+
+
+.section-container .about-me-right{
+    height: 500px;
+    width: 44%;
+    padding: 40px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* border: 2px solid #fff; */
+    border-radius: 60px;
+    box-shadow: 18px 18px rgb(48 47 78 / 52%);
+    background: rgb(48, 47, 78);
+    z-index: 1;
+
+}
+
+.section-container .about-me-right p{
+    background: none;
 }
 
 .about-me .section-container h1{
     text-align: center;
 }
 
+
+@media(max-width:700px){
+    .about-me-img{
+        height: 250px;
+        width: 250px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .section-container{
+        flex-direction: column;
+    }
+    .section-container .about-me-right{
+        width: 80%;
+        padding: 10px;
+        margin: 60px;
+    }
+
+    .section-container .about-me-right p {
+        background: none;
+        color: #FFFFFF;
+        font-family: "Rubik", Sans-serif;
+        font-size: 17px;
+        letter-spacing: 1.1px;
+        font-size: 1.0rem;
+        padding: 10px;
+    }
+}
 
 /* ------------- Services Section -------------  */
 
