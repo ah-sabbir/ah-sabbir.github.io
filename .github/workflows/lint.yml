@@ -11,13 +11,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ 14, 16, 18 ]
+    name: Node ${{ matrix.node }} sample
     steps:
-    - uses: actions/checkout@master
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v1
-      with:
-        version: 12.x
-    - name: Lint
-      run: |
-        npm ci
-        npm run lint
+      - uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm ci
+      - run: npm Lint
