@@ -1,0 +1,25 @@
+{
+  "name": "ah-sabbir",
+  "version": "1.0.0",
+  "description": "sabbir's personal website",
+  "main": "js/cli.js",
+  "scripts": {
+    "dev": "http-server -o",
+    "format": "prettier --write 'src/*.js'",
+    "lint": "prettier --check 'src/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ah-sabbir/ah-sabbir.github.io.git"
+  },
+  "author": "Sabbir Ahmmed <ahsabbir103@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ah-sabbir/ah-sabbir.github.io/issues"
+  },
+  "homepage": "https://github.com/ah-sabbir/ah-sabbir.github.io#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^2.0.2"
+  }
+}
